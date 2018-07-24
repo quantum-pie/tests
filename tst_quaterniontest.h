@@ -1,10 +1,15 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
 
-using namespace testing;
+#include <quaternion.h>
 
-TEST(QuaternionTest, FrameworkTests)
+using namespace testing;
+using namespace quat;
+
+class QuaternionTest : public Test
 {
-    EXPECT_EQ(1, 1);
-    ASSERT_THAT(0, Eq(0));
-}
+protected:
+    Quaternion q;
+};
+
+

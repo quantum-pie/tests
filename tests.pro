@@ -12,7 +12,7 @@ INCLUDEPATH += $$(EIGEN_INCLUDE) += $$(BOOST_INCLUDE) \
 
 OBJ_PREFIX = $$PWD/../release/ins_board_pc/obj/
 
-LIBS += $$OBJ_PREFIX/quaternion.o
+LIBS += $$OBJ_PREFIX/quaternion.o $$OBJ_PREFIX/quatutils.o
 
 HEADERS += \
         tst_quaterniontest.h

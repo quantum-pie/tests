@@ -8,8 +8,13 @@ using namespace quat;
 
 class QuaternionTest : public Test
 {
+public:
+    QuaternionTest() : q{10, -5, 15, 2},
+                       p{ -45, 7, 1, -12 } {}
+
 protected:
     Quaternion q;
+    Quaternion p;
 };
 
 

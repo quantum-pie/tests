@@ -74,9 +74,9 @@ TEST_F(QuaternionTest, IsDCMTrCorrect)
     auto DCM = q.normalize().dcm();
     auto DCM_TR = q.dcm_tr();
 
-    EXPECT_NEAR(-0.2938, DCM(0, 0), 1e-4);
-    EXPECT_NEAR( 0.8362, DCM(1, 1), 1e-4);
-    EXPECT_NEAR(-0.4124, DCM(2, 2), 1e-4);
+    EXPECT_NEAR(-0.2938, DCM_TR(0, 0), 1e-4);
+    EXPECT_NEAR( 0.8362, DCM_TR(1, 1), 1e-4);
+    EXPECT_NEAR(-0.4124, DCM_TR(2, 2), 1e-4);
 
     EXPECT_DOUBLE_EQ(DCM(0, 1), DCM_TR(1, 0));
     EXPECT_DOUBLE_EQ(DCM(0, 2), DCM_TR(2, 0));

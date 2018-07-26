@@ -1,3 +1,6 @@
+#ifndef TST_QUATERNIONTEST_H
+#define TST_QUATERNIONTEST_H
+
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
 
@@ -17,4 +20,5 @@ protected:
     Quaternion p;
 };
 
+#endif // TST_QUATERNIONTEST_H
 

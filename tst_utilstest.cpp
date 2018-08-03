@@ -24,20 +24,20 @@ TEST_F(UtilsTest, IsFixAngleCorrect)
 TEST_F(UtilsTest, IsFloatFixedCorrect)
 {
     int32_t fixed = float_to_fixed(float_value);
-    EXPECT_EQ(static_cast<int32_t>(51470), fixed);
+    EXPECT_EQ(static_cast<int32_t>(102942), fixed);
 }
 
 TEST_F(UtilsTest, IsDoubleFixedCorrect)
 {
     int32_t fixed = double_to_fixed(greater_than_pi_double);
-    EXPECT_EQ(static_cast<int32_t>(257351), fixed);
+    EXPECT_EQ(static_cast<int32_t>(514710), fixed);
     EXPECT_NEAR(greater_than_pi_double, fixed_to_double(fixed), 1e-4);
 }
 
 TEST_F(UtilsTest, IsAngleFixedCorrect)
 {
     int32_t fixed = angle_to_fixed(between_minus_pi_and_pi_double);
-    EXPECT_EQ(static_cast<int32_t>(10922), fixed);
+    EXPECT_EQ(static_cast<int32_t>(21844), fixed);
     EXPECT_NEAR(between_minus_pi_and_pi_double, fixed_to_angle(fixed), 1e-4);
 }
 

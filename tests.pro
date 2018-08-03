@@ -18,7 +18,11 @@ OBJ_PREFIX = $$PWD/../release/ins_board_pc/obj/
 
 LIBS += $$OBJ_PREFIX/quaternion.o \
         $$OBJ_PREFIX/quatutils.o \
-        $$OBJ_PREFIX/utils.o
+        $$OBJ_PREFIX/utils.o \
+        $$OBJ_PREFIX/geometry.o \
+        $$OBJ_PREFIX/horizon.o \
+        $$OBJ_PREFIX/gravity.o \
+        $$OBJ_PREFIX/ellipsoid.o
 
 HEADERS += \
         tst_quaterniontest.h \

@@ -50,9 +50,9 @@ TEST_F(QuaternionTest, IsNormalizationCorrect)
 TEST_F(QuaternionTest, IsRPYCorrect)
 {
     auto rpy = q.normalize().rpy();
-    EXPECT_NEAR( 1.9988, rpy[0], 1e-4);
-    EXPECT_NEAR(-0.1132, rpy[1], 1e-4);
-    EXPECT_NEAR(-0.5707, rpy[2], 1e-4);
+    EXPECT_NEAR(-2.8742, rpy[0], 1e-4);
+    EXPECT_NEAR( 1.1289, rpy[1], 1e-4);
+    EXPECT_NEAR(-2.3282, rpy[2], 1e-4);
 }
 
 TEST_F(QuaternionTest, IsDCMCorrect)
